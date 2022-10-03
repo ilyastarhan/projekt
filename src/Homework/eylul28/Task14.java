@@ -1,4 +1,4 @@
-package Homework.eylul28.tasks;
+package Homework.eylul28;
 
 public class Task14 {
 
