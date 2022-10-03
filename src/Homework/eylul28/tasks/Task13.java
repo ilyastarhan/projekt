@@ -30,8 +30,7 @@ public class Task13 {
 
     public static boolean kontrolEt(String x, String y) {
 
-        boolean result = x.endsWith(y);
-        return result;
+        return x.endsWith(y);
 
 
     }
