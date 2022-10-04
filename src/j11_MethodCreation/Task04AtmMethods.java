@@ -6,16 +6,21 @@ public class Task04AtmMethods {
     static Scanner scan = new Scanner(System.in);
     static int bakiye = 1000;
 
-    public static void secim() {
+    public static void main(String[] args) {
         System.out.println("Lütfen yapmak istediginiz islemi seciniz...");
-        System.out.println("Bakiye ögrenme icin -> 1 " +
-                "\nPara yatirmak icin -> 2\nPara cekmek icin -> 3\nCikmak icin ->4");
+
+        secim();
+    }
+
+    public static void secim() {
+        System.out.println("Bakiye ögrenme icin -> 1 " + "\nPara yatirmak icin -> 2\nPara cekmek icin -> 3\nCikmak icin ->4");
         int secim = scan.nextInt();
         if (secim == 1) bakiye();
         else if (secim == 2) parayatirma();
         else if (secim == 3) paracekme();
         else if (secim == 4) cikis();
         else System.out.println("hatali secim yaptiniz...");
+        secim();
     }
     private static void bakiye() {
         System.out.println("bakiyeniz = " + bakiye + "Tl'dir");
@@ -47,7 +52,7 @@ public class Task04AtmMethods {
         int karar = scan.nextInt();
         if (karar == 2) {
             cikis();
-        } else if (karar == 1){secim();}
+        } else if (karar == 1)secim();
         else System.out.println("hatali secim yaptiniz...");
     }
 
