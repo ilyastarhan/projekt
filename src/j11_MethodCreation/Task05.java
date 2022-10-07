@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class Task05 {
     static Scanner scan = new Scanner(System.in);
+    static Double ucret;
 
     public static void main(String[] args) {
         /*
@@ -49,7 +50,7 @@ bilet gidis donus alinirrsa 20% indirim uygulayan bi app create ediniz */
     }
 
     private static double yasindirim() {
-        double yasindirim;
+        double yasindirim = 0.0;
         System.out.println("Lütfen yasinizi giriniz: ");
         int yas = scan.nextInt();
         if (yas < 12) {
@@ -67,10 +68,11 @@ bilet gidis donus alinirrsa 20% indirim uygulayan bi app create ediniz */
         System.out.println("Lütfen seciniz \ncift yön -> 1 \ntek yön -> 2 ");
         int secim = scan.nextInt();
         if (secim == 1)
-            gidisdonusindirim = 0.80;
+            gidisdonusindirim = 2*0.80;
         else if (secim == 2)
-            gidisdonusindirim = 1.0;
-        else System.out.println("Hatali secim yaptiniz...");
+            gidisdonusindirim = 2*1.0;
+        else {System.out.println("Hatali secim yaptiniz...");
+            gidisdonus();}
         return gidisdonusindirim;
     }
 }

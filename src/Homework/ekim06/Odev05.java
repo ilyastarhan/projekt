@@ -1,9 +1,8 @@
-package Homework.eylul28;
+package Homework.ekim06;
 
-public class _12_method12 {
+import java.util.Scanner;
 
-
-
+public class Odev05 {
 
     /*
     powerOfThree isminde bir method oluşturun.
@@ -33,26 +32,22 @@ public class _12_method12 {
         45, 3ün üssü (kuvveti) değildir.
      */
 
-  //  public static void main(String[] args) {
-  //      Scanner scanner = new Scanner(System.in);
-  //      System.out.print("bir tamsayı giriniz: ");
-  //      int sayi= scanner.nextInt();
+    public static void main(String[] args) {
 
-//     //  System.out.println(powerOfThree(sayi));
+        System.out.println(powerOfThree());
 
+    }
+    public static boolean powerOfThree() {
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Lütfen tam sayi giriniz: ");
+        int num = scan.nextInt();
+        boolean result = true;
 
-//   }
-
-//   private static boolean powerOfThree(int a) {
-//       boolean power = false;
-//       while (a >3) {
-//           a /= 3;
-//       }
-//       if (a%3 == 0) power = true;
-//       return power;
-
-//       }
-
+        for (int i = 3; num >=i; i*=3) {
+            if (num % i  != 0) {
+                result= false;
+            }
+        }
+        return result;
+    }
 }
-
-

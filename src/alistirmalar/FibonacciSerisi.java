@@ -11,7 +11,7 @@ public class FibonacciSerisi {
         int i2=1;
         int toplam1;
         for( int i = 1; i<=sayi; i++  ){
-            System.out.print(i1 + ",");
+            System.out.print(i1 + " ");
             toplam1=i1+i2;
             i1=i2;
             i2=toplam1;
