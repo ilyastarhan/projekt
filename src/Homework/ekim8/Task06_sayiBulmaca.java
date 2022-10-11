@@ -12,22 +12,26 @@ public class Task06_sayiBulmaca {
         // kullanici sayiyi buldugunda kac tahminde sayiyi buldugunu kullaniciya yazdirin
         Random rand = new Random();
         int num = rand.nextInt(100);
-        int sayac = 1;
+        int sayac = 0;
+        boolean oyunDevam = true;
         Scanner scan = new Scanner(System.in);
-        System.out.println("lütfen tahmininizi giriniz: ");
-        int tahmin = scan.nextInt();
-        while (tahmin != num) {
+
+        while (oyunDevam) {
+            System.out.println("lütfen tahmininizi giriniz: ");
+            int tahmin = scan.nextInt();
             if (num < tahmin) {
                 System.out.println("sayiyi kucult");
 
-            } else {
+            } else if(num > tahmin) {
                 System.out.println("sayiyi arttir");
 
             }
-            tahmin = scan.nextInt();
+            else {System.out.println("tebrikler sayiyi bildiniz");
+                oyunDevam = false;
+            }
             sayac++;
         }
-        System.out.println("tebrikler sayiyi bildiniz");
+
         System.out.println("sayiyi " + sayac + ". denemede buldunuz");
 
 

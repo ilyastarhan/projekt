@@ -15,8 +15,10 @@ public class Task05 {
 		String isim = scan.nextLine();
 		System.out.println("lütfen soyisim giriniz: ");
 		String soyisim = scan.nextLine();
+		String birlesik = isim.concat(soyisim);
+		System.out.println(birlesik.replaceAll("", " "));
 
-		String str = isim.concat(soyisim).replaceAll(" ", "");
+		String str = isim.concat(soyisim).replaceAll(" ", "").trim();
 		int i = 0;
 		while (str.length() > i) {
 			System.out.print(str.charAt(i) + " ");
