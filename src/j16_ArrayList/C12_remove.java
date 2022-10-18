@@ -23,6 +23,10 @@ public class C12_remove
         System.out.println("listUlke = " + listUlke);
         listUlke.remove("Alamanya");
         System.out.println("listUlke = " + listUlke);
-        System.out.println("listUlke.removeAll(listUlke) = " + listUlke.removeAll(listUlke));
+        System.out.println("listUlke = " + listUlke);
+        listUlke.addAll(listSehir);
+        System.out.println("listUlke = " + listUlke);
+        listUlke.removeAll(listSehir);
+        System.out.println("listUlke = " + listUlke);
     }
 }

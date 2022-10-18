@@ -17,9 +17,11 @@ public class Task10 {
 
     }
     private static void isaretdegistirme(int arr[]) {
-        for (int i = 0; i < arr.length; i++) {
-            arr [i] = (-arr[i]);
+        for (int each : arr) {
+           each*=-1;
+            System.out.print(each + " ");
         }
+        System.out.println();
         System.out.println(Arrays.toString(arr));
     }
 }

@@ -14,4 +14,6 @@ public class C06_set {
 
         // System.out.println(listSehir.set(11, "pataGONYA"));//olmayan index set edilirse RTE veririr.
         System.out.println("listSehir = " + listSehir);
+
+        //*** list de coklu set methodu calismaz. CTE verir
     }}
