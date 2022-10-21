@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Q07_ArrayList {
+    static  Scanner scan = new Scanner(System.in);
     public static void main(String[] args) {
 
 
@@ -18,11 +19,17 @@ public class Q07_ArrayList {
          * output {2}
          *
          */
-        Scanner scan = new Scanner(System.in);
+
+
+        tekrarliSayilar();
+
+    }
+
+    private static void tekrarliSayilar() {
         System.out.println("Lütfen liste uzunlugunu giriniz: ");
         int uzunluk = scan.nextInt();
-        ArrayList<Integer> list = new ArrayList<Integer>(uzunluk);
-        ArrayList<Integer> yeniList = new ArrayList<Integer>();
+        ArrayList<Integer> list = new ArrayList<>(scan.nextInt());
+        ArrayList<Integer> yeniList = new ArrayList<>();
         for(int i=0; i< uzunluk; i++) {
             System.out.println("Lütfen listenin " + (i + 1) + ". elemanini giriniz: ");
             list.add(scan.nextInt());
@@ -33,8 +40,10 @@ public class Q07_ArrayList {
                     yeniList.add(list.get(i));
             }
         }
-        System.out.println("yeniList = " + yeniList);
-
+        if(yeniList.isEmpty()){
+            System.out.println("tekrarli sayi yok");}
+        else
+            System.out.println("tekrarli sayilar = " + yeniList);
 
     }
 }
