@@ -61,7 +61,33 @@ public class Day13 {
         	HINT: you will need to use .equals() method
 
              */
+        System.out.println("*****TipCalculator*****");
 
+        int split = 1;
+        int number;
+        double amount=0;
+        String serviceQuality = "";
+        double tip=0;
+        double tipPerPerson = 0;
+        double totalPerPerson;
+        double totalToPay = 0;
+        System.out.println("Number of people entered:");
+        number = scan.nextInt();
+        System.out.println("Check amount:");
+        amount = scan.nextDouble();
+        System.out.println("Service Quality: 1-->Poor\n2-->Fair\n 3-->Good\n 4-->Great\n 5-->Excellent");
+        System.out.println("Split - > 1 or \nNo split - > 2");
+
+        totalPerPerson = amount / number;
+        if(serviceQuality.equalsIgnoreCase("Poor"))
+            if(split == 1)
+
+
+        System.out.println("Number of people entered: " + number);
+        System.out.println("Total to pay: " + totalToPay);
+        System.out.println("Total tip: " + tip);
+        System.out.println("Total per person: " + totalPerPerson);
+        System.out.println("Tip per person: ");
 
 
     }

@@ -18,43 +18,33 @@ Bunun haricinde iki koşul ifadesi arasında dikkate değer bir performans farkl
         TRICK-> Switch Statement'de long,double,float ve boolean asla KULLANILMAZZZ.. CISSS
  */
         Scanner scan = new Scanner(System.in);
-        System.out.println("Lütfen bir rakam giriniz");
-        int sayi = scan.nextInt();
-        switch (sayi) {
-            case 0:
-                System.out.println("Sifir");
-                break;
-            case 1:
-                System.out.println("Bir");
-                break;
-            case 2:
-                System.out.println("Iki");
-                break;
-            case 3:
-                System.out.println("Üc");
-                break;
-            case 4:
-                System.out.println("Dört");
-                break;
-            case 5:
-                System.out.println("Bes");
-                break;
-            case 6:
-                System.out.println("Alti");
-                break;
-            case 7:
-                System.out.println("Yedi");
-                break;
-            case 8:
-                System.out.println("Sekiz");
-                break;
-            case 9:
-                System.out.println("Dokuz");
-                break;
-            default:
-                System.out.println("yanlis tusa bastiniz..");
+        int[][] arrayOfInts = {
+                { 32, 87, 3, 589 },
+                { 12, 1076, 2000, 8 },
+                { 622, 127, 77, 955 }
+        };
+        int searchfor = 12;
 
+        int i;
+        int j = 0;
+        boolean foundIt = false;
+
+        search:
+        for (i = 0; i < arrayOfInts.length; i++) {
+            for (j = 0; j < arrayOfInts[i].length;
+                 j++) {
+                if (arrayOfInts[i][j] == searchfor) {
+                    foundIt = true;
+                    break search;
+                }
+            }
         }
 
+        if (foundIt) {
+            System.out.println("Found " + searchfor + " at " + i + ", " + j);
+        } else {
+            System.out.println(searchfor + " not in the array");
+        }
     }
+
 }

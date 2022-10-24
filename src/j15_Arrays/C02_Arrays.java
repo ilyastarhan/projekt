@@ -3,6 +3,7 @@ package j15_Arrays;
 import java.util.Arrays;
 
 public interface C02_Arrays {
+
     public static void main(String[] args) {
        // Array elemani varligini kontrol etme
 
@@ -22,5 +23,6 @@ public interface C02_Arrays {
         System.out.println(Arrays.binarySearch(arr, 21));
         //Trick --> Methodu Array da olmayan elemani calisirsa eger bu eleman array de olsaydi
         //kacinci sirada olurdu nun cevabini verir.
+
     }
 }
