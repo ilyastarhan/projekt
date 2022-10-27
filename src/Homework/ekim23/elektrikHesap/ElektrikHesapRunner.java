@@ -10,7 +10,7 @@ public class ElektrikHesapRunner {
 
 
         Musteri musteri1 = new Musteri("Ahmet", fatura1);
-
+        System.out.println(musteri1.ElektrikHesap);
 
 
     }
