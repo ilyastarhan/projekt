@@ -53,8 +53,8 @@ public class Employee {/*
         return tax;
     }
 
-    public double bonus() {
-        double bonus = 0;
+    public int bonus() {
+        int bonus = 0;
         if (workHours > 40)
             bonus = (workHours - 40) * 50;
         return bonus;
@@ -64,11 +64,11 @@ public class Employee {/*
 
     public double maasArtis() {
         double artis =0;
-        if ((2021 - year) > 15)
-            artis = ((salary + tax())) * 0.20;
+        if (2021 - year > 15)
+            artis = (salary + tax()) * 0.20;
         else if ((2021 - year) > 5)
-            artis = ((salary + tax())) * 0.10;
-        else artis = ((salary + tax())) * 0.05;
+            artis = (salary + tax()) * 0.10;
+        else artis = (salary + tax()) * 0.05;
         return artis;
     }
     @Override

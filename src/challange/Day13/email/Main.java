@@ -1,10 +1,7 @@
 package challange.Day13.email;
 
-public class email {
-    public static void main(String[] args) {
-
-
-    /*
+public class Main {
+      /*
     İşe yeni başlayan arkadaşlarımızın kullanımı için arkadaşlara şirket maili ve şifresi create edilip verilmelidir.
             --> ** Bir sonraki sprintte create edilen bu mail otomatik olarak IT Manager, HR Manager, Team Lead e mail atılacaktır. Bunu göz önünde bulundurarak proglama yapınız.
     Nitelikler:
@@ -27,11 +24,10 @@ public class email {
     showInfo() çalışanın adı, soyadı, email, password unu konsolda gösterecek bir metot oluşturunuz.
 
      */
+      public static void main(String[] args) {
+          EmailApp emailApp = new EmailApp("Ilyas", "Tarhan");
+          System.out.println(emailApp.showInfo());
 
-    String password = "";
-    String karakterler = "ABCDEFGHIJKLMNOPRSTUVYZ1234567890?*!'+abcdefghıjklmanoprstuvyi";
-        for(int i =0 ; i <12 ; i++){
-            password += "" + karakterler.charAt((int) (Math.random() *( karakterler.length() - 1)));
-    }
-        System.out.println("password = " + password);
-    }}
+
+      }
+}

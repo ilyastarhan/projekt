@@ -15,7 +15,7 @@ public class Task01 {
         System.out.println("tersString(\"ece\") = " + tersString("ece"));// ece
         System.out.println("tersString(\"serhat\") = " + tersString("serhat"));// tahres
 
-        StringBuilder sb1=new StringBuilder("ali");
+        StringBuilder sb1 = new StringBuilder("ali");
 
         tersSB(sb1);//ila
         tersSB(new StringBuilder("serhat"));//tahres
@@ -23,22 +23,26 @@ public class Task01 {
         System.out.println("isPalindrom(\"aga\") = " + isPalindrom("aga"));//true
         System.out.println("isPalindrom(\"nazım\") = " + isPalindrom("nazım"));//false
     }//main sonu
-    public static String tersString(String str){//ali->ila--> amele code
-        String stringTersi="";
 
-        for (int i = str.length()-1; i >=0 ; i--) {
-            stringTersi+=str.charAt(i);
+    public static String tersString(String str) {//ali->ila--> amele code
+        String stringTersi = "";
+
+        for (int i = str.length() - 1; i >= 0; i--) {
+            stringTersi += str.charAt(i);
         }
-        return  stringTersi;
+        return stringTersi;
     }
-    public  static void tersSB(StringBuilder sb){//cıncıx code
+
+    public static void tersSB(StringBuilder sb) {//cıncıx code
         System.out.println("sb.reverse() = " + sb.reverse());//sb ters ceviri
     }
 
-    public  static boolean isPalindrom(String str){
-        if(str==null){
+    public static boolean isPalindrom(String str) {
+        if (str == null) {
             return false;
+
         }
         return new StringBuilder(str).reverse().toString().equals(str);
 
-    }}
+    }
+}
