@@ -1,4 +1,4 @@
-package j24_Encapsulation;
+package j25_Encapsulation;
 
 public class main{
 
