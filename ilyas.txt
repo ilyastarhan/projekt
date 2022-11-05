@@ -1,0 +1,67 @@
+Git konsol kodlari
+pwd ///gecerli klasörü göster
+mkdir klasör ismi /// yeni klasör olustur
+cd   /// üst kalsöre gir
+cd  dosyaismi /// dosyaya git
+touch dosyaismi   /// dosya olustur
+
+git init  //// baslangicta yazilir
+
+ls    /// klasör icerisindeki dosyalari gösterir  /list
+ls -a   /// gizli ögeleri gösterir
+
+git status   /// staging areadaki degisiklikleri gösterir
+
+git add . ///
+git add dosyaismi   ///
+
+git commit -m "....."
+
+git log  /// commitleri listeler
+
+git checkout commitIdDegeri -- . /// bir önceki versiyona dönme
+
+git diff    /// dosyada yapilan degisiklikleri görme
+git diff dosyaismi  // dosya icerisinde yapilan degisiklikleri gösterir
+
+git checkout -- dosyaismi // dosyada yapilan degisikligi geri alma (staging area öncesi)
+
+git reset HEAD dosya ismi  // stagin area ya gönderilen dosyayi geri cekme
+
+
+git rm(Remove) dosya ismi ////dosya silme
+git rm -r klasörIsmi /// klasör silme
+
+git mv dosyaIsmi yeniDosyaIsmi /// dosya ismi degistirme
+git mv dosyaIsmi klasörIsmi /// berlirtilen dosyayi belirtilen klasöre tasir
+git mv dosyaIsmi klasörIsmi/yeniDosyaIsmi   /// belirtilen klasöre yeni isimle tasir
+
+
+git remote add origin adresCubugu /// uzak sunucu
+
+git push -u origin master // master branchine gönderme
+
+git pull // branchdeki dosyalari cekme
+
+gitignore/////////////////////
+date.txt  //dosya gözardi edilir
+dizin/*  //klasörün tamami gozardi edilir
+!dizin/data.ext //istisna
+
+git branch  ///
+git branch --all
+
+git branch branchismi //yeni branch olusturma
+git checkout dosyaismi  //branche baglanma
+
+git pull origin master
+
+git merge branchismi  // branchi mastera baglamak
+
+
+
+
+
+
+
+

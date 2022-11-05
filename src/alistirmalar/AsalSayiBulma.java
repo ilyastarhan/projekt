@@ -7,10 +7,10 @@ public class AsalSayiBulma {
         Scanner scan = new Scanner(System.in);
         System.out.print("Lütfen bir sayi giriniz: ");
         int sayi = scan.nextInt();
-        boolean asal = false;
+        boolean asal = true;
         for (int i = 2; i <= sayi-1; i++) {
             if (sayi % i != 0) {
-                asal = true;
+                asal = false;
                 break;
             }}
         System.out.println(asal);
