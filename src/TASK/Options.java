@@ -4,53 +4,75 @@ import java.util.Scanner;
 
 public class Options {
     Scanner scan = new Scanner(System.in);
-    Urun urun = new Urun();
 
 
-    public void select() {
-        System.out.println("Lütfen istediginiz ürünü listeden seciniz: ");
+    public double select(Urun urun) {
         System.out.println(urun.toString());
-        switch (scan.nextInt()) {
+        System.out.println("Cikis icin 8'e basiniz");
+        System.out.println("Lütfen ürün seciniz: ");
+        urun.productNum = scan.nextInt();
+        switch (urun.productNum) {
             case 1:
-                urun.accountBalance -= urun.kraker;
+                urun.setPrice(urun.getKraker());
                 break;
+
             case 2:
-                urun.accountBalance -= urun.cips;
+                urun.setPrice(urun.getCips());
                 break;
+
             case 3:
-                urun.accountBalance -= urun.cocaCola;
+                urun.setPrice(urun.getCocaCola());
                 break;
+
             case 4:
-                urun.accountBalance -= urun.fanta;
+                urun.setPrice(urun.getFanta());
                 break;
+
             case 5:
-                urun.accountBalance -= urun.su;
+                urun.setPrice(urun.getSu());
                 break;
+
             case 6:
-                urun.accountBalance -= urun.cay;
+                urun.setPrice(urun.getCay());
                 break;
+
             case 7:
-                urun.accountBalance -= urun.filtreKahve;
+                urun.setPrice(urun.getFiltreKahve());
                 break;
             case 8:
-                System.out.println(urun.accountBalance);
+                System.out.println("Yine bekleriz");
                 break;
             default:
-                System.out.println("hatali secim yaptiniz...\nTekrar deneyiniz...");
-                select();
+                System.out.println("Hatali secim yaptiniz ..." +
+                        " Tekrar secim yapiniz...");
+                select(urun);
                 break;
+        }
+        return urun.getPrice();
+    }
 
+    public double balance(double price, double accountBalance, Urun urun) {
+
+        double fonlama;
+        while (accountBalance < price) {
+            Scanner scan = new Scanner(System.in);
+            System.out.println("Bakiyeniz yetersiz...\n" +
+                    "Ekleme yapmak icin (Y) cikis icin (N)");
+            char confirm = scan.next().toLowerCase().charAt(0);
+            if (confirm == 'y') {
+                System.out.println("lütfen eklemek istediginiz bakiyeyi giriniz: ");
+                accountBalance += scan.nextDouble();
+                System.out.println("Yeni bakiyeniz " + accountBalance);
+                price = select(urun);
+            } else if (confirm == 'n') {
+                System.out.println("mevcut bakiyeniz " + accountBalance);
+                System.out.println("Yine bekleriz...");
+                break;
+            }
         }
 
-    }
-
-    public void balance(double price, double accountBalance, Urun product) {
-
-
-    }
-
-    public void purchase(double price, double accountBalance, Urun product) {
-
-
+        return accountBalance;
     }
 }
+
+
