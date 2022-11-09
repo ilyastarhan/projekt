@@ -27,7 +27,9 @@ FileNotException'in kullanilmasina gerek yoktur. IOException FileNotFoundExcepti
 Class'inin parent class Hz.Adem
  */
         FileInputStream fis = new FileInputStream("C:\\Users\\ilyas\\IdeaProjects\\javaLearn\\src\\j29_Exceptions\\ebikGabik");
-
+// eger bir method'da checked(CTE riski olan exception) exception varsa method signature
+        // hata uyarisi verir. komutun derlenmesine izin vermez ve kod uzerine gelindiginde Add... exception uyarisi verir. otomatik throws exception
+        //eklenir bu sekilde methodu cagiran komutlar try catch e alinmasi garanti edilmis olur
         int k;
         while((k=fis.read())!= -1){
             System.out.print((char)k);
