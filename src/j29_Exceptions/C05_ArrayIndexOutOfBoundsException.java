@@ -8,6 +8,7 @@ public class C05_ArrayIndexOutOfBoundsException {
 
         try {
             System.out.println(arr[10]);
+            System.out.println("Sorun yakalanmadi");
         } catch (ArrayIndexOutOfBoundsException e) {
             System.out.println("Hata yakalandi");
         }

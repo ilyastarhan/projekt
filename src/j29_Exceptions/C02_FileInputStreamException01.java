@@ -4,7 +4,7 @@ import java.io.FileInputStream;
 import java.io.IOException;
 
 public class C02_FileInputStreamException01 {
-    public static void main(String[] args) throws IOException { // parent class exception
+    public static void main(String[] args) throws IOException{ // parent class exception
  //   public static void main(String[] args) throws FileNotFoundException {   // read() method öncesi child exception
 /*
 
@@ -30,10 +30,6 @@ Class'inin parent class Hz.Adem
 // eger bir method'da checked(CTE riski olan exception) exception varsa method signature
         // hata uyarisi verir. komutun derlenmesine izin vermez ve kod uzerine gelindiginde Add... exception uyarisi verir. otomatik throws exception
         //eklenir bu sekilde methodu cagiran komutlar try catch e alinmasi garanti edilmis olur
-        int k;
-        while((k=fis.read())!= -1){
-            System.out.print((char)k);
 
-        }
     }
 }
