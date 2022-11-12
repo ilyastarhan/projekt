@@ -8,6 +8,7 @@ public abstract class BattleLocation extends Location{
         this.obstacle = obstacle;
     }
     public boolean getLocation() {
+
         return true;
     }
 }
