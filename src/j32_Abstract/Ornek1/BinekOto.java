@@ -15,6 +15,7 @@ public abstract class BinekOto {
     // istenirse yapılmayabilir.
 
     public int getUretimYili() {
+
         return this.uretimYili;
     }
 

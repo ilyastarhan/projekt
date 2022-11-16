@@ -16,7 +16,7 @@ public class Ford extends BinekOto {
 
     @Override
     public int getUretimYili() {
-        System.out.println(super.getUretimYili());
+
         return super.getUretimYili();
     }
 }

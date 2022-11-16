@@ -29,6 +29,7 @@ public class C01_InstanceVariable {
     double boy;// default deger 0.0
     char unvan;// default deger bosluk
 
+
     public static void main(String[] args) {//main bası
 
         int a = 7;//local vari.

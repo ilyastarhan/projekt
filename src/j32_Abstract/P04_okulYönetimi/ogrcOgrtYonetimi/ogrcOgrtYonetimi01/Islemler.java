@@ -1,15 +1,13 @@
 package j32_Abstract.P04_okulYönetimi.ogrcOgrtYonetimi.ogrcOgrtYonetimi01;
 
 import java.util.ArrayList;
-import java.util.List;
 import java.util.Scanner;
 
 public class Islemler {
-
-    static List<Kisi> ogrncListesi = new ArrayList<>();
+    static String kisiTuru;
+    public static ArrayList<Kisi> ogrncListesi = new ArrayList<>();
     static ArrayList<Kisi> ogrtListesi = new ArrayList<>();
     static Scanner scan = new Scanner(System.in);
-    static String kisiTuru;
     public static final String W = "\u001B[37m";
     public static final String R = "\u001B[31m";
     public static final String G = "\u001B[32m";
@@ -97,10 +95,15 @@ public class Islemler {
         if (kisiTuru.equalsIgnoreCase("OGRENCI")){//ogrenci arıyorsa if body çalışacak
             scan.nextLine();//dummy
             System.out.println();//bos satır print
-            System.out.print("silinecek ogrenci kimlik no giriniz : ");
 
-            String silinecekKimlikNo=scan.next();
-
+            String silinecekKimlikNo;
+            while(true) {
+                System.out.print("silinecek ogrenci kimlik no giriniz : ");
+                silinecekKimlikNo = scan.next();
+                if (silinecekKimlikNo.length() == 11)
+                    break;
+                else System.out.println("hatali kimlik no girdiniz tekrar deneyiniz...");
+            }
             for (Kisi k:ogrncListesi) {
                 if (k.getKimlikNo().equals(silinecekKimlikNo)){//flag havada
                     System.out.println("silinen ogrenci : "+k.getAdSoyad());
@@ -113,8 +116,14 @@ public class Islemler {
                 System.out.println("silinecek ogrenci mevcut değil ");
             }
         }else{//ogretmen aranıyorsa else body calışacak
-            System.out.print("silinecek ogretmenin kimlik no giriniz : ");
-            String silinecekOgrtKimlikNo=scan.next();
+            String silinecekOgrtKimlikNo;
+            while (true){
+                System.out.print("silinecek ogretmenin kimlik no giriniz : ");
+                silinecekOgrtKimlikNo = scan.next();
+                if(silinecekOgrtKimlikNo.length() == 11)
+                    break;
+                else System.out.println("Hatali kimlik no girdiniz tekrar deneyiniz...");
+            }
             for (Kisi k: ogrtListesi) {
                 if (k.getKimlikNo().equalsIgnoreCase(silinecekOgrtKimlikNo)){//flag havada
                     System.out.println("silinen ogretmen : "+k.getAdSoyad());
