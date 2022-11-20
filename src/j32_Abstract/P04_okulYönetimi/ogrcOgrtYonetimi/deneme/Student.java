@@ -2,7 +2,7 @@ package j32_Abstract.P04_okulYönetimi.ogrcOgrtYonetimi.deneme;
 
 public class Student extends Person{
 
-    private int studentNo;
+    private int studentNo = 100;
     private String className;
 
     public int getStudentNo() {
@@ -11,7 +11,7 @@ public class Student extends Person{
 
 
     public void setStudentNo(int studentNo) {
-        this.studentNo = studentNo;
+        this.studentNo++;
     }
 
     public String getClassName() {
@@ -22,9 +22,8 @@ public class Student extends Person{
         this.className = className;
     }
 
-    public Student(String name, String surName, int stundentNo, String className, String identificationNumber, int age) {
+    public Student(String name, String surName, String className, String identificationNumber, int age) {
         super(name, surName, identificationNumber, age);
-        setStudentNo(stundentNo);
         setClassName(className);
     }
 

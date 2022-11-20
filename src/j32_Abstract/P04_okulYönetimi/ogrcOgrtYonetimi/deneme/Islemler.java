@@ -87,6 +87,7 @@ public class Islemler {
         }
         int yas = 0;
         while (true) {
+
             System.out.println("Lütfen yas giriniz: ");
             scan.nextLine();
             yas = scan.nextInt();
@@ -95,18 +96,10 @@ public class Islemler {
             else System.out.println("Hatali yas girdiniz...");
         }
         if (kisiTuru.equals("ÖGRENCI")) {
-            int ogrenciNo = 0;
-            while (true) {
-                System.out.println("Lütfen ögrenci no giriniz: ");
-                ogrenciNo = scan.nextInt();
-                if (ogrenciNo > 100 && ogrenciNo < 1000)
-                    break;
-                else System.out.println("Ögrenci numarasi 100 ile 1000 arasinda girilmelidir!");
-            }
             System.out.println("Lütfen sinifi giriniz:");
             scan.nextLine();
             String sinif = scan.next();
-            Student ogrenci = new Student(name, surName, ogrenciNo, sinif, kimlikNo, yas);
+            Student ogrenci = new Student(name, surName, sinif, kimlikNo, yas);
             studentList.add(ogrenci);
         } else {
             int id = 0;

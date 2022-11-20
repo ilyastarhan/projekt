@@ -1,5 +1,8 @@
 package j35_Colloections.C02_Set;
 
+import java.util.Arrays;
+import java.util.HashSet;
+
 public class C01_HashSet {
     /*
      Set :  1) unique(benzersiz tek) elemanlardan olusur, Set'lerin icinde bir eleman sadece bir kere kullanilabilir. mükerrer(duplicate) eleman olmaz.
@@ -44,5 +47,36 @@ public class C01_HashSet {
      */
     public static void main(String[] args) {
 
+        HashSet<String> hs1 = new HashSet<String>();
+        HashSet<String> hs2 = new HashSet<String>(Arrays.asList("Ercan", "Yakup", "Adem", "Rukiye", "Nur"));
+        //Print etme
+        System.out.println("hs1 = " + hs1);
+        System.out.println("hs2 = " + hs2);
+        hs2.add("Kevser");
+        System.out.println("hs2 = " + hs2);
+        hs2.add("Adem");
+        System.out.println(hs2);
+        hs2.add(null);
+        hs2.add(null);
+        hs2.add(null);
+        System.out.println("hs2 = " + hs2);
+        HashSet<String> hs3 = new HashSet<String>(Arrays.asList("Basari", "gayrete", "asiktir"));
+        hs2.addAll(hs3);
+        System.out.println("hs2 = " + hs2);
+
+        System.out.println("hs2.remove(\"asiktir\") = " + hs2.remove("asiktir"));
+        System.out.println("hs2.remove(\"gayret\") = " + hs2.remove("gayret"));
+        System.out.println("hs2 = " + hs2);
+        System.out.println("hs2.removeAll(hs3) = " + hs2.removeAll(hs3));
+        System.out.println("hs2 = " + hs2);
+
+        System.out.println("hs2.size() = " + hs2.size());
+        System.out.println("hs2.isEmpty() = " + hs2.isEmpty());
+        System.out.println("hs2.contains(\"adem\") = " + hs2.contains("adem"));
+        hs2.clear();
+        System.out.println("hs2.size() = " + hs2.size());
+        System.out.println("hs2 = " + hs2);
+        System.out.println("hs2.hashCode() = " + hs2.hashCode());
+        System.out.println("hs3.hashCode() = " + hs3.hashCode());
     }
 }

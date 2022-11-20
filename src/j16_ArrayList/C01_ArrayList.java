@@ -70,6 +70,8 @@ public class C01_ArrayList {
         listSayi.add(41);//list eleman tekrarini kabul eder
         System.out.println("listSayi = " + listSayi);
 
+        listSayi.forEach(System.out::println);
+
         //2.yol -> Array.asList() methodu
         ArrayList <String> listIsim = new ArrayList<String>(Arrays.asList("Muharrem", "Nur", "Enise", "Fatih"));
         System.out.println("listIsim = " + listIsim);
