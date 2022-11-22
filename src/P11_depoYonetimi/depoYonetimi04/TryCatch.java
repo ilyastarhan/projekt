@@ -1,5 +1,6 @@
 package P11_depoYonetimi.depoYonetimi04;
-import static advancedJavaPractice.JavaProjects.P11_depoYonetimi.depoYonetimi04.Islemler.scan;
+
+import static P11_depoYonetimi.depoYonetimi04.Islemler.scan;
 public class TryCatch {
     public static int intGirisi() {
         int giris = 0;

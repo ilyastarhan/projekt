@@ -3,7 +3,7 @@ package P11_depoYonetimi.depoYonetimi05;
 import java.util.ArrayList;
 import java.util.List;
 
-import static advancedJavaPractice.JavaProjects.P11_depoYonetimi.depoYonetimi05.Variables.*;
+import static P11_depoYonetimi.depoYonetimi05.Variables.*;
 
 
 public class urunTanimla {

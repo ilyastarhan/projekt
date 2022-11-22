@@ -5,7 +5,7 @@ import java.util.Collection;
 import java.util.List;
 import java.util.Set;
 
-import static advancedJavaPractice.JavaProjects.P11_depoYonetimi.depoYonetimi05.Variables.urunlerMap;
+import static P11_depoYonetimi.depoYonetimi05.Variables.urunlerMap;
 
 public class urunListele {
     public static void urunListele() {
