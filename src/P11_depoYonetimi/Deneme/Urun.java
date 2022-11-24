@@ -13,7 +13,7 @@ public class Urun {
         this.urunIsmi = urunIsmi;
         this.ureticiIsmi = ureticiIsmi;
         this.urunBirimi = urunBirimi;
-        this.urunId = idCount++;
+        urunId=idCount++;
     }
 
     public int getUrunRaf() {
@@ -67,7 +67,7 @@ public class Urun {
 
     public String toString() {
 
-        return urunId + "\t" + urunIsmi + "\t" + "\t"  + ureticiIsmi + "\t" + "\t" + "\t" + urunBirimi + "\t" + "\t" + urunMiktari + "\t" + "\t" + "\t" + urunRaf;
+        return urunId + "\t" + urunIsmi + "\t" + "\t"+ "\t"  + ureticiIsmi + "\t" + "\t" + "\t" + urunBirimi + "\t" + "\t" + urunMiktari + "\t" + "\t" + "\t" + urunRaf;
 
     }
 }

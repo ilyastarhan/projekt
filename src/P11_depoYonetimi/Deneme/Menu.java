@@ -19,7 +19,7 @@ public class Menu {
         int secim = TryCatch.sayiGir();
         switch (secim) {
             case 1:
-                Methodlar.uruntanimlama();
+                Methodlar.urunTanimlama();
                 islemMenusu();
                 break;
             case 2:
