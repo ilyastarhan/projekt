@@ -63,8 +63,11 @@ public class C01_HashSet {
         HashSet<String> hs3 = new HashSet<String>(Arrays.asList("Basari", "gayrete", "asiktir"));
         hs2.addAll(hs3);
         System.out.println("hs2 = " + hs2);
-
         System.out.println("hs2.remove(\"asiktir\") = " + hs2.remove("asiktir"));
+        System.out.println("hs2.retainAll(hs3) = " + hs2.retainAll(hs3));
+        System.out.println("hs2 = " + hs2);
+
+
         System.out.println("hs2.remove(\"gayret\") = " + hs2.remove("gayret"));
         System.out.println("hs2 = " + hs2);
         System.out.println("hs2.removeAll(hs3) = " + hs2.removeAll(hs3));

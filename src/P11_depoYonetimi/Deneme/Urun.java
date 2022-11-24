@@ -1,17 +1,35 @@
 package P11_depoYonetimi.Deneme;
 
 public class Urun {
-    private int urunId = 1000;
+    static int idCount = 1000;
+    private int urunId;
     private String urunIsmi;
     private  String ureticiIsmi;
     private String urunBirimi;
-
-    private String urunRaf;
+    private int urunRaf;
+    private int urunMiktari;
 
     public Urun(String urunIsmi, String ureticiIsmi, String urunBirimi) {
         this.urunIsmi = urunIsmi;
         this.ureticiIsmi = ureticiIsmi;
         this.urunBirimi = urunBirimi;
+        this.urunId = idCount++;
+    }
+
+    public int getUrunRaf() {
+        return urunRaf;
+    }
+
+    public void setUrunRaf(int urunRaf) {
+        this.urunRaf = urunRaf;
+    }
+
+    public int getUrunMiktari() {
+        return urunMiktari;
+    }
+
+    public void setUrunMiktari(int urunMiktari) {
+        this.urunMiktari = urunMiktari;
     }
 
     public int getUrunId() {
@@ -19,6 +37,7 @@ public class Urun {
     }
 
     public void setUrunId(int urunId) {
+
         this.urunId = urunId;
     }
 
@@ -37,12 +56,18 @@ public class Urun {
     public void setUreticiIsmi(String ureticiIsmi) {
         this.ureticiIsmi = ureticiIsmi;
     }
-
     public String getUrunBirimi() {
         return urunBirimi;
     }
 
     public void setUrunBirimi(String urunBirimi) {
         this.urunBirimi = urunBirimi;
+    }
+
+
+    public String toString() {
+
+        return urunId + "\t" + urunIsmi + "\t" + "\t"  + ureticiIsmi + "\t" + "\t" + "\t" + urunBirimi + "\t" + "\t" + urunMiktari + "\t" + "\t" + "\t" + urunRaf;
+
     }
 }

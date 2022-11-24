@@ -9,8 +9,7 @@ public class TryCatch {
         do {
             giris = 0;
             try {
-                if (flag2 == true) { scan.nextLine(); }
-
+                if (flag2) { scan.nextLine(); }
                 flag2 = true;
                 giris = scan.nextInt();
                 scan.nextLine();

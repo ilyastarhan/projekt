@@ -5,24 +5,65 @@ import java.util.List;
 
 public class Brand {
 
-    public static  int id;
-    public String name;
+    private int id;
+    private String name;
 
-    List<Brand> brandList = new ArrayList<Brand>();
+    private static List<Brand> brandList = new ArrayList<Brand>();
+
+    static {
+        createBrands();
+    }
 
     public Brand(int id, String name) {
-        Brand.id = id;
+        this.id = id;
         this.name = name;
     }
 
-    public void createBrands(){
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public static void createBrands() {
+        brandList.add(new Brand(1, "Samsung"));
+        brandList.add(new Brand(2, "Lenovo"));
+        brandList.add(new Brand(3, "Apple"));
+        brandList.add(new Brand(4, "Huawei"));
+        brandList.add(new Brand(5, "HP"));
+        brandList.add(new Brand(6, "Asus"));
+        brandList.add(new Brand(7, "LG"));
+        brandList.add(new Brand(8, "Monster"));
+        brandList.add(new Brand(9, "Casper"));
 
     }
-    public void printBrands(){
+
+    public static void printBrands() {
+        System.out.println("....Marka Listesi....");
+        for (Brand value : brandList) {
+            System.out.println(value.getId() + " " + value.getName());
+        }
+
 
     }
-    public Brand getBrand(int id){
-        Brand brand = new Brand(1,"Lenovo");
-        return brand;
+
+    public static Brand getBrand(int id) {
+        for (Brand value : brandList) {
+            if (value.getId() == id) {
+                return value;
+            }
+        }
+
+        return null;
     }
 }

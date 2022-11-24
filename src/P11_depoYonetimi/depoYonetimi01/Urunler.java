@@ -69,7 +69,7 @@ public class Urunler {//pojo model class
     public String toString() {
         return "Urunleriniz" +
 
-                ", urunIsmi='" + urunIsmi + '\'' +
+                "urun ismi" + urunIsmi +
                 ", uretici='" + uretici + '\'' +
                 ", miktar=" + miktar +
                 ", birim='" + birim + '\'' +
