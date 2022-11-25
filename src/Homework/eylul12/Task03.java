@@ -3,7 +3,7 @@ package Homework.eylul12;
 public class Task03 {
     public static void main(String[] args) {
 
-        /*TASK : Adınızı soyadınızı yaş memeleket ve mesleğinizi console'a yazdırınız... alt alta
+        /*Projeler.TASK : Adınızı soyadınızı yaş memeleket ve mesleğinizi console'a yazdırınız... alt alta
         * ve yanyana yazdırınız..
         * TRICK : Java'da space(boşluk) bir character olarak tanımlanır.
         h a l u k -> 9 karakterli bir ifadedir

@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class task02 {
     public static void main(String[] args) {
-        //TASK->Girilen e=mail hesabinin @gmail.com icermiyorsa lutfen gmail hesabi giriniz
+        //Projeler.TASK->Girilen e=mail hesabinin @gmail.com icermiyorsa lutfen gmail hesabi giriniz
         //@gmail.com ile bitiyorsa hesabiniz onaylandi aksi durumda gecerli hesap giriniz print eden code create ediniz
         Scanner scan = new Scanner(System.in);
         System.out.println("Lütfen email adresini giriniz");

@@ -6,7 +6,7 @@ public class Q09 {
 
     public static void main(String[] args) {
 
-		/*  TASK :
+		/*  Projeler.TASK :
 				StringMethods:
 				girilen  bir strngin ilk yarisini print eden code create ediniz
 	    	    ORNEK:

@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Task03 {
     public static void main(String[] args) {
         /*
-         * TASK->
+         * Projeler.TASK->
          *
          * Kullaniciya gunde kac saat uyudugunu sorun,
          * ayda yilda ve 40 yilda kac gununun uykuda gectigini yazdirin

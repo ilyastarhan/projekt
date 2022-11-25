@@ -3,7 +3,7 @@ package Homework.eylul12;
 public class Task04 {
     public static void main(String[] args) {
         /*
-        TASK :
+        Projeler.TASK :
         Verilen sayi1 ve sayi2 variable’larinin degerlerini degistiren (SWAP)
         code create edip print ediniz.
         a) 3. bir variable kulanarak

@@ -3,7 +3,7 @@ package j22_DateTime.Task;
 public class Task {
     public static void main(String[] args) {
 
-    /*TASK - >
+    /*Projeler.TASK - >
     Bu uygulama kulanıcıların bir ArrayListe kayıt zamanını da alarak
     ekleyen ve sonrasında her dakikanın ilk 10 saniyesinde kaydolanları
     şanslı kullanıcı olarak ekrana yazdıran bir uygulamadır.

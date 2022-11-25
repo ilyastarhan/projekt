@@ -3,7 +3,7 @@ package j15_Arrays;
 public class Task11 {
     public static void main(String[] args) {
 /*
- TASK :
+ Projeler.TASK :
  $ ve  £  isareti olanlarin toplamlarini ayri ayri bulup yazdıran java code create ediniz.
 
 

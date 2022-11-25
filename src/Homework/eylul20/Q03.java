@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Q03 {
 
     public static void main(String[] args) {
-		/* TASK :
+		/* Projeler.TASK :
 		 *  Kullanicinin boyunu  m  ve kilosunu kg alarak  BMI (VKE) hesaplayiniz
 
 	    INFO :

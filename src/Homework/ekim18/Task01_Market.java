@@ -5,7 +5,7 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 public class Task01_Market {
-    /* TASK :
+    /* Projeler.TASK :
      * Bir bakkalın 7 günlük tüm kazançlarını günlük olarak gösteren bir program yazınız.
      * Ayrıca bakkalın bu hafta ortalama kazandığı miktarı gösteren bir method yazınız.
      * Ayrıca bakkalın hangi günler ortalamanın üstüne kazandığını gösteren bir method yazınız.

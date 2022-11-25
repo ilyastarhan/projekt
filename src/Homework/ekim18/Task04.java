@@ -5,7 +5,7 @@ import java.util.Arrays;
 
 public class Task04 {
     public static void main(String[] args) {
-        /* TASK :
+        /* Projeler.TASK :
 
          * Input olarak verilen listteki isimlerden
          * icinde ‘a’ harfi bulunanlari silen bir code create ediniz.

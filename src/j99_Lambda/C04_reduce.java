@@ -14,8 +14,34 @@ public class C04_reduce {
 
     */
     public static void main(String[] args) {
-        List<Integer> list = new ArrayList<Integer>(Arrays.asList(12, 24, 36, 55, 63, 26, 35, 47, 85, 96));
-        ciftKareMaximum(list);
+        List<Integer> list = new ArrayList<Integer>(Arrays.asList(12, 24, 5, 55, 63, 26, 35, 47, 85, 3));
+       // ciftKareMaximum(list);
+        toplamlari(list);
+        System.out.println("toplami " + list.stream().reduce(0, (a, b) -> a + b));
+        System.out.println("Carpimi " +list.stream().filter(C01_LambdaExpression::ciftMi).reduce(1, (a, b) -> a * b));
+        //a-> ilk degerini her zaman atanan identity degerden alir
+        //b-> degerini her zaman stream akistan alir
+        //a-> ilk degerden sonrakileri action(islem body) den alir
+
+        System.out.println("1.yol -> " + list.stream().reduce(Math::min));//1.yol
+        System.out.println("2.yol -> " + list.stream().reduce(Integer::min));//2.yol
+        System.out.println("3.yol -> " + list.stream().reduce(Integer.MAX_VALUE, (t, u) -> t < u ? t : u));//3.yol listenin bos oldugu durumda integer max yazdirir
+        System.out.println("4.yol -> " + list.stream().reduce(C04_reduce::enKucuk));//4.yol
+
+        System.out.println(list.stream().filter(t -> t > 24 && t % 2 == 1).reduce(Math::min));
+
+    }
+    public static int enKucuk(int a, int b){
+        return a < b ? a : b;
+
+    }
+
+
+    // Task : List'teki tum elemanlarin toplamini yazdiriniz.
+    public static void toplamlari(List<Integer> list){
+
+        Optional<Integer> toplam =list.stream().reduce(Integer::sum);
+        System.out.println(toplam);
     }
     // Task : List'in cift elemanlarin karelerinin en buyugunu print ediniz
 

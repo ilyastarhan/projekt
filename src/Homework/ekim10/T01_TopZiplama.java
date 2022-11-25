@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class T01_TopZiplama {
 
-   /* HAFTANIN TASK'iiii :-)
+   /* HAFTANIN Projeler.TASK'iiii :-)
     Bir top belirli yükseklikten atılmaktadır.
     Atıldıktan sonra, atıldığı yüksekliğin 3/4 u kadar yerden yukarı doğru zıplamaktadır
     Top zıplama  yüksekliği 1 metrenin altına indiğinde durmaktadır.

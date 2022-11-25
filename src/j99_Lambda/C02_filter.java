@@ -14,5 +14,7 @@ public class C02_filter {
         numbers.add(1);
         Consumer<Integer> method = (n)-> System.out.print(n*n + " ");
         numbers.forEach(method);
+
+
     }
 }

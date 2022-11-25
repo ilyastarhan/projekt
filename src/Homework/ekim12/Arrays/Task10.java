@@ -6,7 +6,7 @@ public class Task10 {
     static int arr[];
 
     public static void main(String[] args) {
-        /* TASK :
+        /* Projeler.TASK :
         bir int Array elemanlarinin işaretini(+-)degistiren  bir method create ediniz.
         input : 1,2,-3,4,-5,-6
         output :-1,-2,3,-4,5,6

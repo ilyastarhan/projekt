@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Task01 {
     public static void main(String[] args) {
-        /* TASK->
+        /* Projeler.TASK->
 		 Ask user to enter mid-term grade, final grade, and project grade
 		 Calculate the general grade (mid-term : 30% , project : 20%, final : 50%)
 

@@ -9,7 +9,7 @@ public class Task12_Manav {
 
 
     public static void main(String[] args) {
-        /* TASK :
+        /* Projeler.TASK :
          * Basit bir 5 ürünlü manav alisveris programi yaziniz.
          *
          * 1. Adim : urun listesinden urun sectir ve kac kilo oldugunu sor.

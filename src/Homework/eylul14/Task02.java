@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Task02 {
     public static void main(String[] args) {
         /*
-         * TASK ->
+         * Projeler.TASK ->
          *
          * Kullanicidan boyunu cm olarak, kilosunu kilogram olarak alin
          * ve vucut kutle endeksini bulun.

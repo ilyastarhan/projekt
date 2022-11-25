@@ -6,7 +6,7 @@ public class Task05 {
 
     public static void main(String[] args) {
 		/*
-		TASK :
+		Projeler.TASK :
 		Girilen not değerini aşağıdaki tabloya göre karşılığını print eden code create ediniz.
 		1. 0(dahil) ile 50 arasi - D
 		2. 50(dahil) ile 60 arası - C

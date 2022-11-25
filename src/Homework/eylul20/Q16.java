@@ -3,7 +3,7 @@ package Homework.eylul20;
 import java.util.Scanner;
 
 public class Q16 {
-/* TASK :
+/* Projeler.TASK :
     Kullanicidan 3 Numara isteyiniz ve bu numaralarin en buyuk ve 
     en kucuk olanlarini konsola yazdiriniz
     int num1 

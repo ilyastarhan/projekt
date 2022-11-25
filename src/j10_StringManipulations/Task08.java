@@ -2,7 +2,7 @@ package j10_StringManipulations;
 
 public class Task08 {
     public static void main(String[] args) {
-        //TASK :
+        //Projeler.TASK :
         //   Asagidaki String degiskenini kullanarak  konsolda isminizi yazdiriniz.
         //   String  pickName = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
         //    */

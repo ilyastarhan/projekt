@@ -5,7 +5,7 @@ public class Q09 {
     public static void main(String[] args) {
 
        /*
-            TASK :
+            Projeler.TASK :
             45 değerinde bir double oluşturun.
             Eğer double 5'e bölününce kalan 0 ise ve double 8'e bölününce kalan 0 ise
             "able to divide by 5 and 8" yazdırınız.

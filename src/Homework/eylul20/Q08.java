@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Q08 {
     /*
-     * TASK :
+     * Projeler.TASK :
 
      * Kullanicidan aldigi urunun adedini ve liste fiyatini alin, kullaniciya
      * musteri karti olup olmadigini sorun

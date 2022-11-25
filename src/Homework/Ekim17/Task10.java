@@ -9,7 +9,7 @@ import java.util.List;
 public class Task10 {
 
     public static void main(String[] args) {
-        /* TASK :
+        /* Projeler.TASK :
          * Verilen arraydeki tekrar eden sayilari, ilki haric silip, tekrarsiz
          * sayilardan olusan bir array haline getiren bir code create ediniz.
          *

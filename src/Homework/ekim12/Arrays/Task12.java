@@ -5,7 +5,7 @@ import java.util.Arrays;
 public class Task12 {
 
     public static void main(String[] args) {
-		/* TASK :
+		/* Projeler.TASK :
         given an int array and find the squares of the elements
         (Verilen bir int dizisi icin elemanlarin karelerini print eden code create ediniz.)
         Example:{2,6,4,5,8,9}
