@@ -42,7 +42,9 @@ public class C06_distinct {
                                 charAt(t.toString().length()-1)).
                         reversed()).distinct().
                 forEach(t->System.out.print(t + " "));
-
+            int a = 5;
+            int b = 16;
+            boolean deger = a>Math.sqrt(b);
         // Task : listin elemanlarin karakterler sayilarinin cift sayili olanlarinin karelerini hesaplayan,ve karelerini tekrarsiz buyukten kucuge sirali  print ediniz...
         System.out.println();
         System.out.println("// Task : listin elemanlarin karakter sayilarinin cift sayili olanlarinin karelerini hesaplayan,ve karelerini tekrarsiz buyukten kucuge sirali  print ediniz...");
