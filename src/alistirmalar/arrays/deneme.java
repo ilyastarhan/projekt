@@ -1,10 +1,14 @@
 package alistirmalar.arrays;
 
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
 
 public class deneme {
     public static void main(String[] args) {
 
+        ArrayList<String> list2 = new ArrayList<>();
+        ArrayList<String> list = new ArrayList<>(Arrays.asList("to", "be", "or", "not", "to", "be", "hamlet"));
 
 
         int[][] jagged = new int[5][];
@@ -26,6 +30,39 @@ public class deneme {
 
     }
 
+    public static int kthLargest(int k, int[] a) {
+        ArrayList<Integer> list = new ArrayList<>();
+        for(int i = 0 ; i < a.length ; i++) {
+            list.add(a[i]);        }
+        Collections.sort(list);
+        return list.get(list.size()-k-1);
+
+
+    }
+    public static int mode(int[] a) {
+        int num = Integer.MAX_VALUE;
+        int count1=1;
+        for(int i = 0; i<a.length;i++){
+            int count = 0;
+            for(int j = 0; j<a.length; j++){
+                if(a[i]==a[j]){
+                    count++;
+                }
+            }
+            if(count>=count1){
+                if(count>count1)
+                {
+                    count1=count;
+                    num=a[i];
+                }
+                else{
+                    count1=count;
+                    if(a[i]<num)
+                        num=a[i];
+                }}
+        }
+        return num;
+    }
     public static void swapPairs(String[] a) {
         String[] arr = new String[a.length];
         for(int i = 0; i<a.length;){

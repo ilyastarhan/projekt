@@ -47,7 +47,7 @@ public class C06_distinct {
             boolean deger = a>Math.sqrt(b);
         // Task : listin elemanlarin karakterler sayilarinin cift sayili olanlarinin karelerini hesaplayan,ve karelerini tekrarsiz buyukten kucuge sirali  print ediniz...
         System.out.println();
-        System.out.println("// Task : listin elemanlarin karakter sayilarinin cift sayili olanlarinin karelerini hesaplayan,ve karelerini tekrarsiz buyukten kucuge sirali  print ediniz...");
+        System.out.println("// Task : listin elemanlarin karakterinin cift sayili olanlarinin karelerini hesaplayan,ve karelerini tekrarsiz buyukten kucuge sirali  print ediniz...");
             menu.stream().  //akisa al
                     map(String::length).//karakter sayilarini al
                     filter(t-> t%2==0). //karakter sayilarindan cift olanlari al
