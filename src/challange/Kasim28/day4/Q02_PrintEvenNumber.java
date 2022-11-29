@@ -1,4 +1,4 @@
-package challange.Kasim;
+package challange.Kasim28.day4;
 
 import java.util.Scanner;
 
