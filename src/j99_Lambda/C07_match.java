@@ -26,7 +26,7 @@ public class C07_match {
         System.out.println("enAzBirEleman(menu) = " + enAzBirEleman(menu));
 
         System.out.println("\n***************************");
-
+//111
     }
     public static boolean enAzBirEleman(List<String> menu){
         return menu.stream().anyMatch(t->t.toLowerCase().charAt(t.length()-1)=='x');
