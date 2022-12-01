@@ -22,5 +22,6 @@ public class C10_remove {
         System.out.println("hm.remove(\"Ebay\") = " + hm.remove("Ebay"));
         System.out.println("hm.remove(\"111 Euro\") = " + hm.remove("111 Euro"));
         System.out.println("hm = " + hm);
+
     }
 }
