@@ -82,8 +82,7 @@ sonuç 300 olmalıdır.  */
     //           System.out.println("Cezaniz 700$");
     //       }
         int ceza = 0;
-            if (currentSpeed < 55) ceza = 0;
-            else if (currentSpeed < 75) ceza = 100;
+            if (currentSpeed < 75 && currentSpeed>=55) ceza = 100;
             else if (currentSpeed < 85) ceza = 150;
             else if (currentSpeed < 95) ceza = 320;
             else ceza = 500;
