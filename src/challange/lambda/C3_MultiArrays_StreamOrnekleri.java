@@ -17,8 +17,8 @@ public class C3_MultiArrays_StreamOrnekleri {
 
         //-->S1
         System.out.print("S1 : ");
-      // List<String> arrList = Arrays.stream(arr).toArray()
-      //  System.out.println(arrList);
+
+
         System.out.println("\n \t\t\t***");
     }
     // S1 : tum elemanlari list yapalim
