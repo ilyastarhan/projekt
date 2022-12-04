@@ -6,10 +6,6 @@ package challange.lambda;
 // Arrays.stream(arr).flatMap(Arrays::stream)
 // BU SEKLIDE ARTIK TUM STREAM METHODLARI KULLANILABILIR
 
-import java.util.Arrays;
-import java.util.List;
-import java.util.stream.Collectors;
-
 public class C3_MultiArrays_StreamOrnekleri {
     public static void main(String[] args) {
         String arr[][] = {
@@ -18,6 +14,12 @@ public class C3_MultiArrays_StreamOrnekleri {
                 {"Havuc","Erik"}
         };
 
+
+        //-->S1
+        System.out.print("S1 : ");
+      // List<String> arrList = Arrays.stream(arr).toArray()
+      //  System.out.println(arrList);
+        System.out.println("\n \t\t\t***");
     }
     // S1 : tum elemanlari list yapalim
 
