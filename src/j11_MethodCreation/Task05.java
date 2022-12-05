@@ -70,7 +70,7 @@ bilet gidis donus alinirrsa 20% indirim uygulayan bi app create ediniz */
         if (secim == 1)
             gidisdonusindirim = 2*0.80;
         else if (secim == 2)
-            gidisdonusindirim = 2*1.0;
+            gidisdonusindirim = 1.0;
         else {System.out.println("Hatali secim yaptiniz...");
             gidisdonus();}
         return gidisdonusindirim;

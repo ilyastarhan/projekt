@@ -3,7 +3,6 @@ package challange.lambda;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
-import java.util.Arrays;
 import java.util.stream.Stream;
 
 /*
@@ -25,25 +24,27 @@ buda lines altinda kirmizi uyari veriyor uzerine tiklayinca kendiliginden oluyor
 */
 public class C7_DosyaOkuma {
     public static void main(String[] args) throws IOException {
-
-
+        Stream<String> satir = Files.lines(Path.of("src/challange/lambda/C7_TextFile"));
 
     // S1: Yazdiralim
-
+     //   satir.forEach(System.out::println);
 
     // S2: tum harflari buyuk harf ile yazdiralim
-
-
+     //   satir.map(String::toUpperCase).forEach(System.out::println);
     // S3: son satiri buyuk harfle yazdiralim
-
+     //   satir.skip(4).map(String::toUpperCase).forEach(System.out::println);
 
     // S4: 2.ve 3. satirlari yazdiralim
+     //   satir.skip(1).limit(2).forEach(System.out::println);
 
 
     // S5: kac tane "icin" kelimesi vardir
 
+     //   System.out.println(satir.filter(t -> t.contains("icin")).count());
 
-    // S6: tum kelimeleri natural order  yazdiriniz.
+
+
+        // S6: tum kelimeleri natural order  yazdiriniz.
 
 
     // S7:  metinde kac tane "a"  vardir
