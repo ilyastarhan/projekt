@@ -1,5 +1,7 @@
 package Team07.p6_Loops.break_Continue;
 
+import java.util.ArrayList;
+
 public class Ebob_Ekok {
 
     /*--->>> EBOB
@@ -19,6 +21,37 @@ public class Ebob_Ekok {
     public static void main(String[] args) {
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        int sayi1= 12;
+        int sayi2 = 6;
+
+        ArrayList<Integer> bolenler = new ArrayList<Integer>();
+        int ekok = 1;
+        for (int i = 2; i <= Math.max(sayi1, sayi2); i++) {
+            while (sayi1 % i == 0 || sayi2 % i == 0) {
+                bolenler.add(i);
+                ekok *= i;
+                if (sayi1 % i == 0)
+                    sayi1 /= i;
+                if (sayi2 % i == 0)
+                    sayi2 /= i;
+            }
+        }
+        System.out.println("bölenler = " + bolenler);
+        System.out.println("Sayilarin en kücük ortak kati = " + ekok);
 
     }
 }

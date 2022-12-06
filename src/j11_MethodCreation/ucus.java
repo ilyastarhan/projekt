@@ -68,11 +68,11 @@ public class ucus {
     }
 
     static double yasIndirimi(int yas){
-        if(yas<12)
+        if(yas<=12)
             return 0.50;
-        else if(yas>12 && yas<24)
+        else if(yas<=24)
             return 0.90;
-        else if(yas >65)
+        else if(yas >=65)
             return 0.70;
         else
             return 1;
