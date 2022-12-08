@@ -11,7 +11,7 @@ public class MusteriVeArabaBilgisiGirisi extends AracTalebi {
     static Scanner scan = new Scanner(System.in);
 
     static int toplamGun;
-
+//
     public static void aracTalep() {
         System.out.println("Lutfen araci alacaginiz sehri giriniz:");
         String sehir = scan.nextLine();
