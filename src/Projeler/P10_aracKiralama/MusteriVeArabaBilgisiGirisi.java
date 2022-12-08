@@ -4,9 +4,9 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-public class MusteriVeArabaBilgisiGirisi extends AracTalebi {
+public class MusteriVeArabaBilgisiGirisi extends Arac {
 
-    static List<AracTalebi> aracTalebiList = new ArrayList<>();
+    static List<Arac> aracTalebiList = new ArrayList<>();
 
     static Scanner scan = new Scanner(System.in);
 
@@ -71,18 +71,18 @@ public class MusteriVeArabaBilgisiGirisi extends AracTalebi {
 
     public static void arabalar() {
 
-        AracTalebi opelDizelOtomatik = new AracTalebi("Opel", "Astra", "dizel", "otomatik", 150);
-        AracTalebi opelDizelManuel = new AracTalebi("Opel", "Astra", "dizel", "manuel", 130);
-        AracTalebi opelBenzinliOtomatik = new AracTalebi("Opel", "Astra", "benzin", "otomatik", 150);
-        AracTalebi opelBenzinliManuel = new AracTalebi("Opel", "Astra", "benzin", "manuel", 130);
-        AracTalebi toyotaDizelOtomatik = new AracTalebi("Toyota", "Astra", "dizel", "otomatik", 180);
-        AracTalebi toyotaDizelManuel = new AracTalebi("Toyota", "Astra", "dizel", "manuel", 160);
-        AracTalebi toyotaBenzinliOtomatik = new AracTalebi("Toyota", "Astra", "benzin", "otomatik", 200);
-        AracTalebi toyotaBenzinliManuel = new AracTalebi("Toyota", "Astra", "benzin", "manuel", 190);
-        AracTalebi vwDizelOtomatik = new AracTalebi("VW", "Astra", "dizel", "otomatik", 180);
-        AracTalebi vwDizelManuel = new AracTalebi("VW", "Astra", "dizel", "manuel", 160);
-        AracTalebi vwBenzinliOtomatik = new AracTalebi("VW", "Astra", "benzin", "otomatik", 200);
-        AracTalebi vwBenzinliManuel = new AracTalebi("VW", "Astra", "benzin", "manuel", 190);
+        Arac opelDizelOtomatik = new Arac("Opel", "Astra", "dizel", "otomatik", 150);
+        Arac opelDizelManuel = new Arac("Opel", "Astra", "dizel", "manuel", 130);
+        Arac opelBenzinliOtomatik = new Arac("Opel", "Astra", "benzin", "otomatik", 150);
+        Arac opelBenzinliManuel = new Arac("Opel", "Astra", "benzin", "manuel", 130);
+        Arac toyotaDizelOtomatik = new Arac("Toyota", "Astra", "dizel", "otomatik", 180);
+        Arac toyotaDizelManuel = new Arac("Toyota", "Astra", "dizel", "manuel", 160);
+        Arac toyotaBenzinliOtomatik = new Arac("Toyota", "Astra", "benzin", "otomatik", 200);
+        Arac toyotaBenzinliManuel = new Arac("Toyota", "Astra", "benzin", "manuel", 190);
+        Arac vwDizelOtomatik = new Arac("VW", "Astra", "dizel", "otomatik", 180);
+        Arac vwDizelManuel = new Arac("VW", "Astra", "dizel", "manuel", 160);
+        Arac vwBenzinliOtomatik = new Arac("VW", "Astra", "benzin", "otomatik", 200);
+        Arac vwBenzinliManuel = new Arac("VW", "Astra", "benzin", "manuel", 190);
 
         aracTalebiList.add(opelDizelOtomatik);
         aracTalebiList.add(opelDizelManuel);

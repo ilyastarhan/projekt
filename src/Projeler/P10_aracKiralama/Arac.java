@@ -1,7 +1,7 @@
 package Projeler.P10_aracKiralama;
 
-public class AracTalebi {
-    public AracTalebi(){
+public class Arac {
+    public Arac(){
 
     }
 
@@ -18,7 +18,7 @@ public class AracTalebi {
     private double gunlukUcret;
 
 
-    public AracTalebi(String alinacakSehir, String alinacakGun, double alisSaati, String teslimGunu, double teslimSaati) {
+    public Arac(String alinacakSehir, String alinacakGun, double alisSaati, String teslimGunu, double teslimSaati) {
         this.alinacakSehir = alinacakSehir;
         this.alinacakGun = alinacakGun;
         this.alisSaati = alisSaati;
@@ -26,7 +26,7 @@ public class AracTalebi {
         this.teslimSaati = teslimSaati;
     }
 
-    public AracTalebi(String marka, String model, String yakitTipi, String vites, double gunlukUcret) {
+    public Arac(String marka, String model, String yakitTipi, String vites, double gunlukUcret) {
         this.marka = marka;
         this.model = model;
         this.yakitTipi = yakitTipi;
