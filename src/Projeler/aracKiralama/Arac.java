@@ -4,7 +4,12 @@ public class Arac {
     private String marka, model, yakitTipi,vites;
     private int gunlukUcret;
     private int aracId;
-    static private int id=1000;
+    static private int id;
+
+    static{
+
+        id = 1000;
+    }
 
     public Arac(String marka, String model, String yakitTipi, String vites, int gunlukUcret) {
         this.marka = marka;

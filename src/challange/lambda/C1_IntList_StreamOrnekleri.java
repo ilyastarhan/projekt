@@ -67,6 +67,8 @@ public class C1_IntList_StreamOrnekleri {
         // S10 :list elemanlarini toplamini bulalim
         System.out.print("S10 : ");
         System.out.print(list.stream().reduce(Integer::sum));
+        System.out.println(list.stream().filter(t -> t % 2 == 0).count());
+
         System.out.println("\n \t\t\t***");
 
         // S11 : peek ornegi cozelim - negatit<0flerin karelerinden list olusturalim

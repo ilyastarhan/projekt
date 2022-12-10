@@ -16,6 +16,7 @@ public class C03_map {
         System.out.println();
         ciftlerinKarekokleri(list);
 
+
     }
 
     public static void ciftKarePrint(List<Integer> list) {

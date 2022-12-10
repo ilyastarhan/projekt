@@ -1,6 +1,7 @@
 package challange.lambda;
 
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -25,7 +26,7 @@ public class C2_StringList_StreamOrnekleri {
         List<String> ilkHarfi_d_veya_c_Olanlar = list.stream().filter(t -> t.startsWith("D") || t.startsWith("C")).collect(Collectors.toList());
         ilkHarfi_d_veya_c_Olanlar.forEach(t -> System.out.print(t + " "));
         System.out.println("\n \t\t\t***");
-
+        list.stream().sorted(Comparator.comparing(t-> t.toString().charAt(t.toString().length()-1)).reversed()).forEach(t -> System.out.print(t+" "));
         //-->S2 tum stringlerin basina ve sonuna yildiz ekleyerek yazdiralim
         System.out.print("S2 : ");
         list.stream().forEach(t -> System.out.print("*" + t + "*" + " "));

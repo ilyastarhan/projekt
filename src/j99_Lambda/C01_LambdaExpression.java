@@ -46,22 +46,30 @@ public class C01_LambdaExpression {
     public static void main(String[] args) {
         List<Integer> list = new ArrayList<Integer>(Arrays.asList(12, 24, 36, 55, 63, 26, 35, 47, 85, 96));
 
-        printStructural(list);
-        System.out.println();
-        System.out.println("*************");
-        printFunctional(list);
-        System.out.println();
-        System.out.println("*************");
-        printFunctional1(list);
-        System.out.println();
-        System.out.println("*************");
-        printFunctional3(list);
-        System.out.println();
-        System.out.println("*************");
-        printFunctional4(list);
-        System.out.println();
-        System.out.println("*************");
-        printFunctional6(list);
+
+
+        //filter -> filtre
+        //map
+       list.stream().filter(t-> t%2==0).forEach(t-> System.out.print(t + " "));
+        list.stream().filter(t-> t%2==0).map(t-> t+2).forEach(t-> System.out.print(t +" "));
+
+
+        //    printStructural(list);
+   //    System.out.println();
+   //    System.out.println("*************");
+   //    printFunctional(list);
+   //    System.out.println();
+   //    System.out.println("*************");
+   //    printFunctional1(list);
+   //    System.out.println();
+   //    System.out.println("*************");
+   //    printFunctional3(list);
+   //    System.out.println();
+   //    System.out.println("*************");
+   //    printFunctional4(list);
+   //    System.out.println();
+   //    System.out.println("*************");
+   //    printFunctional6(list);
 
 
     }

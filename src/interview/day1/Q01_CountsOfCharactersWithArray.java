@@ -18,7 +18,7 @@ public class Q01_CountsOfCharactersWithArray {
         String[] arr = str.split("");
         Arrays.sort(arr);
         int counter = 0;
-
+        //aaccffvvxx    -> 1
         for (int i = 1; i < arr.length; i++) {
             if (arr[i - 1].equals(arr[i])) { //birden fazla sayidaki karakter icin
                 counter++;

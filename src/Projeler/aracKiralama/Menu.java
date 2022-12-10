@@ -1,12 +1,11 @@
 package Projeler.aracKiralama;
 
-import static Projeler.aracKiralama.Methodlar.aracListesiYazdir;
-import static Projeler.aracKiralama.Methodlar.araclariFiltrele;
+import static Projeler.aracKiralama.Methodlar.*;
 
 public class Menu {
 
 
-    public static void menu() {
+    public static void menu(){
         System.out.println("*****Arac Kiralama Sirketimize Hosgeldiniz*****");
         System.out.println("Lütfen yapmak istediginiz islemi seciniz...");
         System.out.println("Arac Kiralama Islemleri => 1\nÖdeme Islemleri => 2\nCikis => 3");
@@ -17,7 +16,9 @@ public class Menu {
                 menu();
                 break;
             case 2:
-                Methodlar.odeme();
+              // Methodlar.odeme();
+              // Methodlar.odenecekTutar();
+                Methodlar.kiralanacakGun();
                 menu();
                 break;
             case 3:
@@ -35,9 +36,10 @@ public class Menu {
         switch (secim) {
             case 1:
                 aracListesiYazdir();
+                aracSec();
                 break;
             case 2:
-                araclariFiltrele();
+                filtreUygulayarakAracSec();
                 break;
         }
 
