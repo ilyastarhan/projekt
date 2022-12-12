@@ -1,0 +1,22 @@
+sümeyra hocam-  enum üzerinden arac tanimlamalari yapilacak 1.madde
+ilyas-           alacagi gün sayisi() 1< ise km hesabi her 500 den sonra %30 artis  bilgi verilecek
+                gün hesabi localdate üzerinden gün hesabi yapilacak
+                aractalep() 2.madde
+                trycatch()
+kerim hocam -   Müsteri bilgileri() ile giris yapma, ödeme islemleri() 7.madde ve 8. madde girisKonsolu()
+
+bilal hocam -   ücretHesapla() 5.madde
+                alacagi gün sayisi 1< ise km hesabi her 500 den sonra %30 artis
+nazim hocam -   arac secimi()
+
+baris hoca  -   sunum (projeninin düzeni ve sunumu)
+turgut hoca -   islemeDevamDongusu()create edin 6.madde
+
+ahmet hoca  -   3.madde Arabalar(); 4. madde araclariListele()
+
+
+
+
+
+
+

@@ -13,24 +13,17 @@ public class MusteriVeArabaBilgisiGirisi extends Arac {
     static int toplamGun;
 //
     public static void aracTalep() {
-        System.out.println("Lutfen araci alacaginiz sehri giriniz:");
-        String sehir = scan.nextLine();
+
         System.out.println("Lutfen teslim alacaginiz gunu giriniz: (Ornek: 12.04)");// ay ve gunu ayirmak mi yoksa string almak mi?
         String alisGunu = scan.next();
-        System.out.println("Lutfen teslim alacaginiz saati giriniz: (Ornek: 15.00)");
-        double alisSaati = scan.nextDouble();
         System.out.println("Lutfen teslim edeceginiz gunu giriniz: (Ornek: 12.04)");
         String teslimGunu = scan.next();
-        System.out.println("Lutfen teslim edeceginiz saati giriniz: (Ornek: 15.00)");
-        double teslimSaati = scan.nextDouble();
-
         System.out.println("************************************");
         String aGun=alisGunu.substring(0,2); //12.04
         int intAGunu= Integer.parseInt(aGun);
         String aAy= alisGunu.substring(3);
         int intAAy = Integer.parseInt(aAy);
         System.out.println("Integer alis tarihi: "+intAGunu+"."+intAAy);
-
         String tGun=teslimGunu.substring(0,2); //12.04
         int intTGunu= Integer.parseInt(tGun);
         String tAy= teslimGunu.substring(3);
@@ -103,6 +96,8 @@ public class MusteriVeArabaBilgisiGirisi extends Arac {
                 "\n8 : Toyota Benzinli Manuel\n9 : vwDizelOtomatik\n10: vwDizelManuel\n11 : vwBenzinliOtomatik" +
                 "\n12 : vwBenzinliManuel" + "\n13: Yeni arac talebi");
         int tercih = scan.nextInt();
+
+
         switch (tercih){
             case 1:
                 getAraba("Opel", "Astra", "dizel", "otomatik", 150);
@@ -200,6 +195,14 @@ public class MusteriVeArabaBilgisiGirisi extends Arac {
         }
 
 
+    }
+    public static int aracSec(){
+
+
+        return 0;
+    }
+    public static void ucrethesapla(int gun, int id){
+        //alacagi gün sayisi 1< ise km hesabi her 500 den sonra %30 artis
     }
     public static void musteriBilgisi(){
         System.out.println("************************************");

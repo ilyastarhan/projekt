@@ -1,5 +1,10 @@
 package Projeler.aracKiralama;
 
+import java.time.DateTimeException;
+import java.time.Duration;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+import java.time.format.DateTimeParseException;
 import java.util.Scanner;
 
 public class Methodlar {
@@ -11,9 +16,10 @@ public class Methodlar {
         System.out.println("ID" + "\t\tMarka" + "\t\tModel" + "\t\tYakit Tipi" + "\t\tVites Tipi" + "\t\tGünlük Ücret");
         AracListesi.aracListesi.values().stream().forEach(t -> System.out.println(t));
 
+
     }
 
-    public static Arac filtreUygulayarakAracSec() {
+    public static int filtreUygulayarakAracSec() {
 
         AracListesi.aracListesi.values().stream().map(Arac::getMarka).distinct().forEach(t -> System.out.println(t + " "));
 
@@ -27,51 +33,90 @@ public class Methodlar {
 
         System.out.print("Lütfen secmek istediginiz aracin id'sini giriniz");
         aracSecim = TryCatch.sayiGir(1000, 1013);
-        System.out.println(AracListesi.aracListesi.get(aracSecim));
-        return AracListesi.aracListesi.get(aracSecim);
+        return filtreUygulayarakAracSec();
     }
-    public static Arac aracSec(){
+
+    public static int aracSec() {
         System.out.print("Lütfen secmek isteginiz Arac Id sini giriniz: ");
-        aracSecim = TryCatch.sayiGir(1000,1013);
-        return AracListesi.aracListesi.get(aracSecim);
+        return aracSecim = TryCatch.sayiGir(1000, 1013);
+
     }
-    public static void odenecekTutar(){
+
+    public static void ucretHesapla() {
+
         System.out.println("Sectiginiz araca ait günlük ücret = " + AracListesi.aracListesi.get(aracSecim).getGunlukUcret());
 
     }
-    public static void kiralanacakGun(){
-        System.out.println("Lutfen araci alacaginiz sehri giriniz:");
-        String sehir = scan.nextLine();
-        System.out.println("Lutfen teslim alacaginiz gunu giriniz: (Ornek: 12.04)");// ay ve gunu ayirmak mi yoksa string almak mi?
-        String alisGunu = scan.next();
-        System.out.println("Lutfen teslim edeceginiz gunu giriniz: (Ornek: 12.04)");
-        String teslimGunu = scan.next();
-        System.out.println("************************************");
-        String aGun=alisGunu.substring(0,2); //12.04
-        int intAGunu= Integer.parseInt(aGun);
-        String aAy= alisGunu.substring(3);
-        int intAAy = Integer.parseInt(aAy);
-        System.out.println("Integer alis tarihi: "+intAGunu+"."+intAAy);
 
-        String tGun=teslimGunu.substring(0,2); //12.04
-        int intTGunu= Integer.parseInt(tGun);
-        String tAy= teslimGunu.substring(3);
-        int intTAy = Integer.parseInt(tAy);
-        System.out.println("Integer teslim tarihi: "+intTGunu+"."+intTAy);
-
-        System.out.println("************************************");
-        if (intAAy>intTAy) {
-            System.out.println("Alis gunu Teslim gununden sonra olamaz");
-            Menu.menu();
-        }else if(intAGunu>intTGunu){
-            System.out.println("Alis gunu Teslim gununden sonra olamaz");
-            Menu.menu();
-        }else{
-
+    public static int kiralanacakGun() {
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd-MM-yyyy HH:mm:ss");
+        LocalDateTime teslimAlma, teslimEtme;
+        while (true) {
+            System.out.print("Araci kiralanacak istediginiz tarih ve saati girin (GG-AA-YYYY SS:DD:SS): ");
+            try {
+                teslimAlma = LocalDateTime.parse(scan.nextLine(), formatter);
+                break;
+            } catch (DateTimeParseException e) {
+                System.out.println("Lütfen örnekteki formatta tarih giriniz");
+            } catch (DateTimeException f) {
+                System.out.println("Lütfen tarihi ay ve güne dikkat ederek giriniz");
+            }
         }
-        int toplamGun= (intTAy-intAAy)*30 + (intTGunu-intAGunu);
-        System.out.println("Odenecek toplam gun ayisi: "+toplamGun);
-        System.out.println("************************************");
+        while (true) {
+            System.out.print("Araci teslim etmek istediginiz tarih ve saati girin (GG-AA-YYYY SS:DD:SS): ");        //     try {
+
+            try {
+                teslimEtme = LocalDateTime.parse(scan.nextLine(), formatter);
+                break;
+            } catch (DateTimeParseException e) {
+                System.out.println("Lütfen örnekteki formatta tarih giriniz");
+            } catch (DateTimeException f) {
+                System.out.println("Lütfen tarihi ay ve güne dikkat ederek giriniz");
+            }
+        }
+        Duration duration = Duration.between(teslimAlma, teslimEtme);
+
+        long fark = duration.toDays() + 1;
+        System.out.println(fark);
+
+        // DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd-MM-yyyy");
+        // LocalDate teslimAlma, teslimEtme;
+        // while (true) {
+        //     System.out.println("Lutfen teslim almak istediginiz gunu giriniz: (Ornek: 12-04-2022)");
+
+        //     try {
+        //         teslimAlma = LocalDate.parse(scan.next(), formatter);
+        //         break;
+        //     } catch (DateTimeParseException e) {
+        //         System.out.println("Lütfen örnekteki formatta tarih giriniz");
+        //     }
+        //     catch (DateTimeException f){
+        //         System.out.println("Lütfen tarihi ay ve güne dikkat ederek giriniz");
+        //     }
+        // }
+        // while (true) {
+        //     System.out.println("Lutfen teslim etmek istediginiz gunu giriniz: (Ornek: 15-04-2022)");
+        //     try {
+        //         teslimEtme = LocalDate.parse(scan.next(), formatter);
+        //         break;
+        //     }
+        //     catch (DateTimeParseException e) {
+        //         System.out.println("Lütfen örnekteki formatta tarih giriniz");
+        //     }
+        //     catch (DateTimeException f){
+        //         System.out.println("Lütfen tarihi ay ve güne dikkat ederek giriniz");
+        //     }
+        // }
+        //     System.out.println(Period.between(teslimAlma, teslimEtme).getDays()+1);//
+        //     if (Period.between(teslimAlma, teslimEtme).getDays() < 0) {
+        //         System.out.println("teslim tarihi kiralama tarihinden önce olamaz");
+        //         kiralanacakGun();
+        //     }
+        //     if (Period.between(teslimAlma, teslimEtme).getDays() > 0)
+        //         return (Period.between(teslimAlma, teslimEtme).getDays()+1);
+        //     else
+        //         return 1;
+        return (int) fark;
     }
 
     public static void odeme() {

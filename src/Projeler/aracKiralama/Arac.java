@@ -73,4 +73,5 @@ public class Arac {
         return aracId + "\t" + marka+ "\t"+ "\t" + "\t"+ model+ "\t" + "\t" +
                yakitTipi+ "\t"+ "\t" + vites+ "\t"+ "\t"+"\t"+ gunlukUcret;
     }
+
 }
